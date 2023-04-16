@@ -82,4 +82,13 @@ public class MainActivity2 extends AppCompatActivity {
             text3.setText(sa+"x^2 "+sb+"x "+sc+" = 0");
         }
     }
+
+    public void btn7(View view) {
+        Intent si=new Intent(this,MainActivity.class);
+        si.putExtra("sofp",sofp);
+        si.putExtra("sofm",sofm);
+        startActivityForResult(si,1);
+        setResult(RESULT_OK,si);
+        finish();
+    }
 }

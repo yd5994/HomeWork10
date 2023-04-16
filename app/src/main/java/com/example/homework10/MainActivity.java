@@ -15,6 +15,8 @@ import android.widget.Toast;
  public class MainActivity extends AppCompatActivity {
      int a,b,c;
      Random rn=new Random();
+     double sofp,sofm;
+     boolean ans=false;
      TextView tx1,tx2,tx3,tx4;
      EditText ET1,ET2,ET3;
 
@@ -25,9 +27,14 @@ import android.widget.Toast;
         tx1=findViewById(R.id.textView1);
         tx2=findViewById(R.id.textView2);
         tx3=findViewById(R.id.textView3);
+        tx4=findViewById(R.id.textView);
         ET1=findViewById(R.id.editTextNumber);
         ET2=findViewById(R.id.editTextNumber2);
         ET3=findViewById(R.id.editTextNumber3);
+        Intent si=getIntent();
+        sofp=si.getDoubleExtra("sofp",0.0);
+        sofm=si.getDoubleExtra("sofm",0.0);
+        tx4.setText("x1= "+String.valueOf(sofp)+"\nx2= "+String.valueOf(sofm));
     }
 
      public void btn1(View view)  {//save;

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -52,7 +52,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="50dp" />
+        android:layout_height="25dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -64,29 +64,29 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SAVE"
-            android:onClick="btn1"/>
+            android:onClick="btn1"
+            android:text="SAVE" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SAVE"
-            android:onClick="btn2"/>
+            android:onClick="btn2"
+            android:text="SAVE" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="SAVE"
-            android:onClick="btn3"/>
+            android:onClick="btn3"
+            android:text="SAVE" />
     </LinearLayout>
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="50dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -130,7 +130,7 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="100dp" />
+        android:layout_height="25dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -174,14 +174,27 @@
 
     <Space
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_weight="1" />
+        android:layout_height="20dp"
+        android:layout_weight="0" />
 
     <Button
         android:id="@+id/button12"
         android:layout_width="175dp"
         android:layout_height="wrap_content"
-        android:text="next page"
-        android:onClick="btn7"/>
+        android:onClick="btn7"
+        android:text="next page" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_weight="0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp" />
 
 </LinearLayout>

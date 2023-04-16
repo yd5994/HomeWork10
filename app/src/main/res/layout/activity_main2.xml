@@ -32,7 +32,7 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="110dp"
         app:srcCompat="@drawable/math" />
 
     <LinearLayout
@@ -61,11 +61,6 @@
             android:textSize="18sp" />
 
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_weight="0" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -117,11 +112,6 @@
 
     </LinearLayout>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="25dp"
-        android:layout_weight="0" />
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -146,5 +136,17 @@
             android:layout_weight="1" />
 
     </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_weight="0" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btn7"
+        android:text="back" />
 
 </LinearLayout>
